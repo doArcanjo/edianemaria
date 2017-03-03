@@ -1,0 +1,37 @@
+{
+  "name": "edianemaria",
+  "version": "0.0.0",
+  "description": "Ediane Maria Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "r1_model": "resume export --theme elegant",
+    "r2": "resume export --theme boilerplate dist/index.html",
+    "r3": "resume export --theme modern dist/index.html",
+    "r1": "npm run r1_model dist/index.html",
+    "go": "resume export --format pdf dist/edianeMaria.pdf",
+    "gh": "gh-pages -d dist",
+    "ghb": "npm run r3 && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doArcanjo/edianemaria.git"
+  },
+  "keywords": [
+    "ediane",
+    "cv"
+  ],
+  "author": "doArcanjo@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doArcanjo/edianemaria/issues"
+  },
+  "homepage": "https://github.com/doArcanjo/edianemaria#readme",
+  "devDependencies": {
+    "gh-pages": "^0.12.0",
+    "jsonresume-theme-boilerplate": "^0.1.2",
+    "jsonresume-theme-elegant": "^1.9.1",
+    "jsonresume-theme-modern": "0.0.18",
+    "resume-cli": "^0.4.18"
+  }
+}
